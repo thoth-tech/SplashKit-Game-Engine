@@ -1,0 +1,37 @@
+# C++ specific
+*.o
+*.obj
+*.exe
+*.dll
+*.ilk
+*.pdb
+*.pch
+*.suo
+*.idb
+*.pdb
+*.ipch
+*.opensdf
+*.tlog
+*.manifest
+*.res
+*.sbr
+
+# Compiled source
+out/
+
+# CMake build directory
+build/
+
+# VSCode settings
+.vscode/
+
+# Dependency folders
+bin/
+lib/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+Desktop.ini
