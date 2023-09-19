@@ -2,9 +2,11 @@
 #include "IGameEngine.h"
 #include <memory>
 
-namespace SplashkitGameEngine {
+namespace SplashkitGameEngine
+{
 
-    class Game {
+    class Game
+    {
     private:
         std::unique_ptr<IGameEngine> gameEngine; // Pointer to IGameEngine interface
 

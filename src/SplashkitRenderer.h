@@ -1,9 +1,11 @@
 #pragma once
 #include "IRenderer.h"
 
-namespace SplashkitGameEngine {
+namespace SplashkitGameEngine
+{
 
-    class SplashkitRenderer : public IRenderer {
+    class SplashkitRenderer : public IRenderer
+    {
 
     private:
         int width;
@@ -17,7 +19,7 @@ namespace SplashkitGameEngine {
         // IRenderer interface implementations
         void Init() override;
         void Clear() override;
-        void RenderObject(const GameObject& object) override;
+        void RenderObject(const GameObject &object) override;
         void Present() override;
         void Shutdown() override;
         void OpenWindow() override;

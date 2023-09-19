@@ -1,0 +1,817 @@
+In file included from src/include/SplashkitWindowManager.h:32,
+                 from src/include/SplashkitWindowManager.cpp:30:
+./src/interfaces/IWindowManager.h:42:31: error: ‘window’ has not been declared
+   42 |     virtual void clear_window(window wind, color clr) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:46:31: error: ‘window’ has not been declared
+   46 |     virtual void close_window(window wind) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:47:13: error: ‘window’ does not name a type
+   47 |     virtual window current_window() = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:58:36: error: ‘window’ has not been declared
+   58 |     virtual bool is_current_window(window wind) = 0;
+      |                                    ^~~~~~
+./src/interfaces/IWindowManager.h:61:33: error: ‘window’ has not been declared
+   61 |     virtual void move_window_to(window wind, int x, int y) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:62:13: error: ‘window’ does not name a type
+   62 |     virtual window open_window(string caption, int width, int height) = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:63:33: error: ‘window’ has not been declared
+   63 |     virtual void refresh_window(window wind) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:64:33: error: ‘window’ has not been declared
+   64 |     virtual void refresh_window(window wind, unsigned int target_fps) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:66:32: error: ‘window’ has not been declared
+   66 |     virtual void resize_window(window wnd, int width, int height) = 0;
+      |                                ^~~~~~
+./src/interfaces/IWindowManager.h:68:37: error: ‘window’ has not been declared
+   68 |     virtual void set_current_window(window wind) = 0;
+      |                                     ^~~~~~
+./src/interfaces/IWindowManager.h:69:35: error: ‘window’ has not been declared
+   69 |     virtual string window_caption(window wind) = 0;
+      |                                   ^~~~~~
+./src/interfaces/IWindowManager.h:71:41: error: ‘window’ has not been declared
+   71 |     virtual bool window_close_requested(window wind) = 0;
+      |                                         ^~~~~~
+./src/interfaces/IWindowManager.h:73:36: error: ‘window’ has not been declared
+   73 |     virtual bool window_has_border(window wnd) = 0;
+      |                                    ^~~~~~
+./src/interfaces/IWindowManager.h:74:35: error: ‘window’ has not been declared
+   74 |     virtual bool window_has_focus(window wind) = 0;
+      |                                   ^~~~~~
+./src/interfaces/IWindowManager.h:76:31: error: ‘window’ has not been declared
+   76 |     virtual int window_height(window wind) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:78:39: error: ‘window’ has not been declared
+   78 |     virtual bool window_is_fullscreen(window wnd) = 0;
+      |                                       ^~~~~~
+./src/interfaces/IWindowManager.h:79:13: error: ‘window’ does not name a type
+   79 |     virtual window window_named(string caption) = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:81:38: error: ‘window’ has not been declared
+   81 |     virtual point_2d window_position(window wnd) = 0;
+      |                                      ^~~~~~
+./src/interfaces/IWindowManager.h:82:34: error: ‘window’ has not been declared
+   82 |     virtual void window_set_icon(window wind, bitmap bmp) = 0;
+      |                                  ^~~~~~
+./src/interfaces/IWindowManager.h:84:39: error: ‘window’ has not been declared
+   84 |     virtual void window_toggle_border(window wnd) = 0;
+      |                                       ^~~~~~
+./src/interfaces/IWindowManager.h:86:43: error: ‘window’ has not been declared
+   86 |     virtual void window_toggle_fullscreen(window wnd) = 0;
+      |                                           ^~~~~~
+./src/interfaces/IWindowManager.h:88:30: error: ‘window’ has not been declared
+   88 |     virtual int window_width(window wind) = 0;
+      |                              ^~~~~~
+./src/interfaces/IWindowManager.h:89:13: error: ‘window’ does not name a type
+   89 |     virtual window window_with_focus() = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:91:26: error: ‘window’ has not been declared
+   91 |     virtual int window_x(window wnd) = 0;
+      |                          ^~~~~~
+./src/interfaces/IWindowManager.h:93:26: error: ‘window’ has not been declared
+   93 |     virtual int window_y(window wnd) = 0;
+      |                          ^~~~~~
+In file included from src/include/SplashkitWindowManager.cpp:30:
+src/include/SplashkitWindowManager.h:39:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::clear_window(window, color)’ marked ‘override’, but does not override
+   39 |                 void clear_window(window wind, color clr) override;
+      |                      ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:43:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::close_window(window)’ marked ‘override’, but does not override
+   43 |                 void close_window(window wind) override;
+      |                      ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:44:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::current_window()’ marked ‘override’, but does not override
+   44 |                 window current_window() override;
+      |                        ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:55:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::is_current_window(window)’ marked ‘override’, but does not override
+   55 |                 bool is_current_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:58:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::move_window_to(window, int, int)’ marked ‘override’, but does not override
+   58 |                 void move_window_to(window wind, int x, int y) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:59:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::open_window(std::string, int, int)’ marked ‘override’, but does not override
+   59 |                 window open_window(string caption, int width, int height) override;
+      |                        ^~~~~~~~~~~
+src/include/SplashkitWindowManager.h:60:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::refresh_window(window)’ marked ‘override’, but does not override
+   60 |                 void refresh_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:61:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::refresh_window(window, unsigned int)’ marked ‘override’, but does not override
+   61 |                 void refresh_window(window wind, unsigned int target_fps) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:63:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::resize_window(window, int, int)’ marked ‘override’, but does not override
+   63 |                 void resize_window(window wnd, int width, int height) override;
+      |                      ^~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:65:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::set_current_window(window)’ marked ‘override’, but does not override
+   65 |                 void set_current_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:66:24: error: ‘std::string SplashkitGameEngine::SplashkitWindowManager::window_caption(window)’ marked ‘override’, but does not override
+   66 |                 string window_caption(window wind) override;
+      |                        ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:68:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_close_requested(window)’ marked ‘override’, but does not override
+   68 |                 bool window_close_requested(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:70:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_has_border(window)’ marked ‘override’, but does not override
+   70 |                 bool window_has_border(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:71:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_has_focus(window)’ marked ‘override’, but does not override
+   71 |                 bool window_has_focus(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:73:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_height(window)’ marked ‘override’, but does not override
+   73 |                 int window_height(window wind) override;
+      |                     ^~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:75:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_is_fullscreen(window)’ marked ‘override’, but does not override
+   75 |                 bool window_is_fullscreen(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:76:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::window_named(std::string)’ marked ‘override’, but does not override
+   76 |                 window window_named(string caption) override;
+      |                        ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:78:26: error: ‘point_2d SplashkitGameEngine::SplashkitWindowManager::window_position(window)’ marked ‘override’, but does not override
+   78 |                 point_2d window_position(window wnd) override;
+      |                          ^~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:79:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_set_icon(window, bitmap)’ marked ‘override’, but does not override
+   79 |                 void window_set_icon(window wind, bitmap bmp) override;
+      |                      ^~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:81:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_toggle_border(window)’ marked ‘override’, but does not override
+   81 |                 void window_toggle_border(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:83:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_toggle_fullscreen(window)’ marked ‘override’, but does not override
+   83 |                 void window_toggle_fullscreen(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:85:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_width(window)’ marked ‘override’, but does not override
+   85 |                 int window_width(window wind) override;
+      |                     ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:86:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::window_with_focus()’ marked ‘override’, but does not override
+   86 |                 window window_with_focus() override;
+      |                        ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:88:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_x(window)’ marked ‘override’, but does not override
+   88 |                 int window_x(window wnd) override;
+      |                     ^~~~~~~~
+src/include/SplashkitWindowManager.h:90:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_y(window)’ marked ‘override’, but does not override
+   90 |                 int window_y(window wnd) override;
+      |                     ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::camera_position()’:
+src/SplashkitCamera.cpp:7:26: error: ‘::camera_position’ has not been declared
+    7 |                 return ::camera_position();
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::camera_x()’:
+src/SplashkitCamera.cpp:12:26: error: ‘::camera_x’ has not been declared
+   12 |                 return ::camera_x();
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::camera_y()’:
+src/SplashkitCamera.cpp:17:26: error: ‘::camera_y’ has not been declared
+   17 |                 return ::camera_y();
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::center_camera_on(sprite, const vector_2d&)’:
+src/SplashkitCamera.cpp:22:19: error: ‘::center_camera_on’ has not been declared
+   22 |                 ::center_camera_on(s, offset);
+      |                   ^~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::center_camera_on(sprite, double, double)’:
+src/SplashkitCamera.cpp:27:19: error: ‘::center_camera_on’ has not been declared
+   27 |                 ::center_camera_on(s, offset_x, offset_y);
+      |                   ^~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_by(const vector_2d&)’:
+src/SplashkitCamera.cpp:32:19: error: ‘::move_camera_by’ has not been declared
+   32 |                 ::move_camera_by(offset);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_by(double, double)’:
+src/SplashkitCamera.cpp:37:19: error: ‘::move_camera_by’ has not been declared
+   37 |                 ::move_camera_by(dx, dy);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_to(const point_2d&)’:
+src/SplashkitCamera.cpp:42:19: error: ‘::move_camera_to’ has not been declared
+   42 |                 ::move_camera_to(pt);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_to(double, double)’:
+src/SplashkitCamera.cpp:47:19: error: ‘::move_camera_to’ has not been declared
+   47 |                 ::move_camera_to(x, y);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::point_in_window(window, const point_2d&)’:
+src/SplashkitCamera.cpp:52:26: error: ‘::point_in_window’ has not been declared
+   52 |                 return ::point_in_window(wind, pt);
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::point_on_screen(const point_2d&)’:
+src/SplashkitCamera.cpp:57:26: error: ‘::point_on_screen’ has not been declared
+   57 |                 return ::point_on_screen(pt);
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::rect_in_window(window, const rectangle&)’:
+src/SplashkitCamera.cpp:62:26: error: ‘::rect_in_window’ has not been declared
+   62 |                 return ::rect_in_window(wind, rect);
+      |                          ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::rect_on_screen(const rectangle&)’:
+src/SplashkitCamera.cpp:67:26: error: ‘::rect_on_screen’ has not been declared
+   67 |                 return ::rect_on_screen(rect);
+      |                          ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::screen_center()’:
+src/SplashkitCamera.cpp:72:26: error: ‘::screen_center’ has not been declared
+   72 |                 return ::screen_center();
+      |                          ^~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::screen_rectangle()’:
+src/SplashkitCamera.cpp:77:26: error: ‘::screen_rectangle’ has not been declared; did you mean ‘sprite_screen_rectangle’?
+   77 |                 return ::screen_rectangle();
+      |                          ^~~~~~~~~~~~~~~~
+      |                          sprite_screen_rectangle
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_position(point_2d)’:
+src/SplashkitCamera.cpp:82:19: error: ‘::set_camera_position’ has not been declared
+   82 |                 ::set_camera_position(pos);
+      |                   ^~~~~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_x(double)’:
+src/SplashkitCamera.cpp:87:19: error: ‘::set_camera_x’ has not been declared
+   87 |                 ::set_camera_x(x);
+      |                   ^~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_y(double)’:
+src/SplashkitCamera.cpp:92:19: error: ‘::set_camera_y’ has not been declared
+   92 |                 ::set_camera_y(y);
+      |                   ^~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::to_screen(const point_2d&)’:
+src/SplashkitCamera.cpp:97:26: error: ‘::to_screen’ has not been declared
+   97 |                 return ::to_screen(pt);
+      |                          ^~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::to_screen(const rectangle&)’:
+src/SplashkitCamera.cpp:102:26: error: ‘::to_screen’ has not been declared
+  102 |                 return ::to_screen(rect);
+      |                          ^~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_screen_x(double)’:
+src/SplashkitCamera.cpp:107:26: error: ‘::to_screen_x’ has not been declared
+  107 |                 return ::to_screen_x(world_x);
+      |                          ^~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_screen_y(double)’:
+src/SplashkitCamera.cpp:112:26: error: ‘::to_screen_y’ has not been declared
+  112 |                 return ::to_screen_y(world_y);
+      |                          ^~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::to_world(const point_2d&)’:
+src/SplashkitCamera.cpp:117:26: error: ‘::to_world’ has not been declared
+  117 |                 return ::to_world(pt);
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_world_x(double)’:
+src/SplashkitCamera.cpp:122:26: error: ‘::to_world_x’ has not been declared
+  122 |                 return ::to_world_x(screen_x);
+      |                          ^~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_world_y(double)’:
+src/SplashkitCamera.cpp:127:26: error: ‘::to_world_y’ has not been declared
+  127 |                 return ::to_world_y(screen_y);
+      |                          ^~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual vector_2d SplashkitGameEngine::SplashkitCamera::vector_world_to_screen()’:
+src/SplashkitCamera.cpp:132:26: error: ‘::vector_world_to_screen’ has not been declared
+  132 |                 return ::vector_world_to_screen();
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::window_area(window)’:
+src/SplashkitCamera.cpp:137:26: error: ‘::window_area’ has not been declared; did you mean ‘window_named’?
+  137 |                 return ::window_area(wind);
+      |                          ^~~~~~~~~~~
+      |                          window_named
+Compilation completed.
+Script started at: 2023-09-19 14:24:31
+Script completed at: 2023-09-19 14:24:37
+Time taken: 6 seconds
+In file included from src/include/SplashkitWindowManager.h:32,
+                 from src/include/SplashkitWindowManager.cpp:30:
+./src/interfaces/IWindowManager.h:42:31: error: ‘window’ has not been declared
+   42 |     virtual void clear_window(window wind, color clr) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:46:31: error: ‘window’ has not been declared
+   46 |     virtual void close_window(window wind) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:47:13: error: ‘window’ does not name a type
+   47 |     virtual window current_window() = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:58:36: error: ‘window’ has not been declared
+   58 |     virtual bool is_current_window(window wind) = 0;
+      |                                    ^~~~~~
+./src/interfaces/IWindowManager.h:61:33: error: ‘window’ has not been declared
+   61 |     virtual void move_window_to(window wind, int x, int y) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:62:13: error: ‘window’ does not name a type
+   62 |     virtual window open_window(string caption, int width, int height) = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:63:33: error: ‘window’ has not been declared
+   63 |     virtual void refresh_window(window wind) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:64:33: error: ‘window’ has not been declared
+   64 |     virtual void refresh_window(window wind, unsigned int target_fps) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:66:32: error: ‘window’ has not been declared
+   66 |     virtual void resize_window(window wnd, int width, int height) = 0;
+      |                                ^~~~~~
+./src/interfaces/IWindowManager.h:68:37: error: ‘window’ has not been declared
+   68 |     virtual void set_current_window(window wind) = 0;
+      |                                     ^~~~~~
+./src/interfaces/IWindowManager.h:69:35: error: ‘window’ has not been declared
+   69 |     virtual string window_caption(window wind) = 0;
+      |                                   ^~~~~~
+./src/interfaces/IWindowManager.h:71:41: error: ‘window’ has not been declared
+   71 |     virtual bool window_close_requested(window wind) = 0;
+      |                                         ^~~~~~
+./src/interfaces/IWindowManager.h:73:36: error: ‘window’ has not been declared
+   73 |     virtual bool window_has_border(window wnd) = 0;
+      |                                    ^~~~~~
+./src/interfaces/IWindowManager.h:74:35: error: ‘window’ has not been declared
+   74 |     virtual bool window_has_focus(window wind) = 0;
+      |                                   ^~~~~~
+./src/interfaces/IWindowManager.h:76:31: error: ‘window’ has not been declared
+   76 |     virtual int window_height(window wind) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:78:39: error: ‘window’ has not been declared
+   78 |     virtual bool window_is_fullscreen(window wnd) = 0;
+      |                                       ^~~~~~
+./src/interfaces/IWindowManager.h:79:13: error: ‘window’ does not name a type
+   79 |     virtual window window_named(string caption) = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:81:38: error: ‘window’ has not been declared
+   81 |     virtual point_2d window_position(window wnd) = 0;
+      |                                      ^~~~~~
+./src/interfaces/IWindowManager.h:82:34: error: ‘window’ has not been declared
+   82 |     virtual void window_set_icon(window wind, bitmap bmp) = 0;
+      |                                  ^~~~~~
+./src/interfaces/IWindowManager.h:84:39: error: ‘window’ has not been declared
+   84 |     virtual void window_toggle_border(window wnd) = 0;
+      |                                       ^~~~~~
+./src/interfaces/IWindowManager.h:86:43: error: ‘window’ has not been declared
+   86 |     virtual void window_toggle_fullscreen(window wnd) = 0;
+      |                                           ^~~~~~
+./src/interfaces/IWindowManager.h:88:30: error: ‘window’ has not been declared
+   88 |     virtual int window_width(window wind) = 0;
+      |                              ^~~~~~
+./src/interfaces/IWindowManager.h:89:13: error: ‘window’ does not name a type
+   89 |     virtual window window_with_focus() = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:91:26: error: ‘window’ has not been declared
+   91 |     virtual int window_x(window wnd) = 0;
+      |                          ^~~~~~
+./src/interfaces/IWindowManager.h:93:26: error: ‘window’ has not been declared
+   93 |     virtual int window_y(window wnd) = 0;
+      |                          ^~~~~~
+In file included from src/include/SplashkitWindowManager.cpp:30:
+src/include/SplashkitWindowManager.h:39:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::clear_window(window, color)’ marked ‘override’, but does not override
+   39 |                 void clear_window(window wind, color clr) override;
+      |                      ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:43:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::close_window(window)’ marked ‘override’, but does not override
+   43 |                 void close_window(window wind) override;
+      |                      ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:44:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::current_window()’ marked ‘override’, but does not override
+   44 |                 window current_window() override;
+      |                        ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:55:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::is_current_window(window)’ marked ‘override’, but does not override
+   55 |                 bool is_current_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:58:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::move_window_to(window, int, int)’ marked ‘override’, but does not override
+   58 |                 void move_window_to(window wind, int x, int y) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:59:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::open_window(std::string, int, int)’ marked ‘override’, but does not override
+   59 |                 window open_window(string caption, int width, int height) override;
+      |                        ^~~~~~~~~~~
+src/include/SplashkitWindowManager.h:60:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::refresh_window(window)’ marked ‘override’, but does not override
+   60 |                 void refresh_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:61:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::refresh_window(window, unsigned int)’ marked ‘override’, but does not override
+   61 |                 void refresh_window(window wind, unsigned int target_fps) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:63:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::resize_window(window, int, int)’ marked ‘override’, but does not override
+   63 |                 void resize_window(window wnd, int width, int height) override;
+      |                      ^~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:65:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::set_current_window(window)’ marked ‘override’, but does not override
+   65 |                 void set_current_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:66:24: error: ‘std::string SplashkitGameEngine::SplashkitWindowManager::window_caption(window)’ marked ‘override’, but does not override
+   66 |                 string window_caption(window wind) override;
+      |                        ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:68:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_close_requested(window)’ marked ‘override’, but does not override
+   68 |                 bool window_close_requested(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:70:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_has_border(window)’ marked ‘override’, but does not override
+   70 |                 bool window_has_border(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:71:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_has_focus(window)’ marked ‘override’, but does not override
+   71 |                 bool window_has_focus(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:73:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_height(window)’ marked ‘override’, but does not override
+   73 |                 int window_height(window wind) override;
+      |                     ^~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:75:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_is_fullscreen(window)’ marked ‘override’, but does not override
+   75 |                 bool window_is_fullscreen(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:76:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::window_named(std::string)’ marked ‘override’, but does not override
+   76 |                 window window_named(string caption) override;
+      |                        ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:78:26: error: ‘point_2d SplashkitGameEngine::SplashkitWindowManager::window_position(window)’ marked ‘override’, but does not override
+   78 |                 point_2d window_position(window wnd) override;
+      |                          ^~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:79:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_set_icon(window, bitmap)’ marked ‘override’, but does not override
+   79 |                 void window_set_icon(window wind, bitmap bmp) override;
+      |                      ^~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:81:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_toggle_border(window)’ marked ‘override’, but does not override
+   81 |                 void window_toggle_border(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:83:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_toggle_fullscreen(window)’ marked ‘override’, but does not override
+   83 |                 void window_toggle_fullscreen(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:85:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_width(window)’ marked ‘override’, but does not override
+   85 |                 int window_width(window wind) override;
+      |                     ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:86:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::window_with_focus()’ marked ‘override’, but does not override
+   86 |                 window window_with_focus() override;
+      |                        ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:88:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_x(window)’ marked ‘override’, but does not override
+   88 |                 int window_x(window wnd) override;
+      |                     ^~~~~~~~
+src/include/SplashkitWindowManager.h:90:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_y(window)’ marked ‘override’, but does not override
+   90 |                 int window_y(window wnd) override;
+      |                     ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::camera_position()’:
+src/SplashkitCamera.cpp:7:26: error: ‘::camera_position’ has not been declared
+    7 |                 return ::camera_position();
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::camera_x()’:
+src/SplashkitCamera.cpp:12:26: error: ‘::camera_x’ has not been declared
+   12 |                 return ::camera_x();
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::camera_y()’:
+src/SplashkitCamera.cpp:17:26: error: ‘::camera_y’ has not been declared
+   17 |                 return ::camera_y();
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::center_camera_on(sprite, const vector_2d&)’:
+src/SplashkitCamera.cpp:22:19: error: ‘::center_camera_on’ has not been declared
+   22 |                 ::center_camera_on(s, offset);
+      |                   ^~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::center_camera_on(sprite, double, double)’:
+src/SplashkitCamera.cpp:27:19: error: ‘::center_camera_on’ has not been declared
+   27 |                 ::center_camera_on(s, offset_x, offset_y);
+      |                   ^~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_by(const vector_2d&)’:
+src/SplashkitCamera.cpp:32:19: error: ‘::move_camera_by’ has not been declared
+   32 |                 ::move_camera_by(offset);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_by(double, double)’:
+src/SplashkitCamera.cpp:37:19: error: ‘::move_camera_by’ has not been declared
+   37 |                 ::move_camera_by(dx, dy);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_to(const point_2d&)’:
+src/SplashkitCamera.cpp:42:19: error: ‘::move_camera_to’ has not been declared
+   42 |                 ::move_camera_to(pt);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_to(double, double)’:
+src/SplashkitCamera.cpp:47:19: error: ‘::move_camera_to’ has not been declared
+   47 |                 ::move_camera_to(x, y);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::point_in_window(window, const point_2d&)’:
+src/SplashkitCamera.cpp:52:26: error: ‘::point_in_window’ has not been declared
+   52 |                 return ::point_in_window(wind, pt);
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::point_on_screen(const point_2d&)’:
+src/SplashkitCamera.cpp:57:26: error: ‘::point_on_screen’ has not been declared
+   57 |                 return ::point_on_screen(pt);
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::rect_in_window(window, const rectangle&)’:
+src/SplashkitCamera.cpp:62:26: error: ‘::rect_in_window’ has not been declared
+   62 |                 return ::rect_in_window(wind, rect);
+      |                          ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::rect_on_screen(const rectangle&)’:
+src/SplashkitCamera.cpp:67:26: error: ‘::rect_on_screen’ has not been declared
+   67 |                 return ::rect_on_screen(rect);
+      |                          ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::screen_center()’:
+src/SplashkitCamera.cpp:72:26: error: ‘::screen_center’ has not been declared
+   72 |                 return ::screen_center();
+      |                          ^~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::screen_rectangle()’:
+src/SplashkitCamera.cpp:77:26: error: ‘::screen_rectangle’ has not been declared; did you mean ‘sprite_screen_rectangle’?
+   77 |                 return ::screen_rectangle();
+      |                          ^~~~~~~~~~~~~~~~
+      |                          sprite_screen_rectangle
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_position(point_2d)’:
+src/SplashkitCamera.cpp:82:19: error: ‘::set_camera_position’ has not been declared
+   82 |                 ::set_camera_position(pos);
+      |                   ^~~~~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_x(double)’:
+src/SplashkitCamera.cpp:87:19: error: ‘::set_camera_x’ has not been declared
+   87 |                 ::set_camera_x(x);
+      |                   ^~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_y(double)’:
+src/SplashkitCamera.cpp:92:19: error: ‘::set_camera_y’ has not been declared
+   92 |                 ::set_camera_y(y);
+      |                   ^~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::to_screen(const point_2d&)’:
+src/SplashkitCamera.cpp:97:26: error: ‘::to_screen’ has not been declared
+   97 |                 return ::to_screen(pt);
+      |                          ^~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::to_screen(const rectangle&)’:
+src/SplashkitCamera.cpp:102:26: error: ‘::to_screen’ has not been declared
+  102 |                 return ::to_screen(rect);
+      |                          ^~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_screen_x(double)’:
+src/SplashkitCamera.cpp:107:26: error: ‘::to_screen_x’ has not been declared
+  107 |                 return ::to_screen_x(world_x);
+      |                          ^~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_screen_y(double)’:
+src/SplashkitCamera.cpp:112:26: error: ‘::to_screen_y’ has not been declared
+  112 |                 return ::to_screen_y(world_y);
+      |                          ^~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::to_world(const point_2d&)’:
+src/SplashkitCamera.cpp:117:26: error: ‘::to_world’ has not been declared
+  117 |                 return ::to_world(pt);
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_world_x(double)’:
+src/SplashkitCamera.cpp:122:26: error: ‘::to_world_x’ has not been declared
+  122 |                 return ::to_world_x(screen_x);
+      |                          ^~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_world_y(double)’:
+src/SplashkitCamera.cpp:127:26: error: ‘::to_world_y’ has not been declared
+  127 |                 return ::to_world_y(screen_y);
+      |                          ^~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual vector_2d SplashkitGameEngine::SplashkitCamera::vector_world_to_screen()’:
+src/SplashkitCamera.cpp:132:26: error: ‘::vector_world_to_screen’ has not been declared
+  132 |                 return ::vector_world_to_screen();
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::window_area(window)’:
+src/SplashkitCamera.cpp:137:26: error: ‘::window_area’ has not been declared; did you mean ‘window_named’?
+  137 |                 return ::window_area(wind);
+      |                          ^~~~~~~~~~~
+      |                          window_named
+In file included from src/include/SplashkitWindowManager.h:32,
+                 from src/include/SplashkitWindowManager.cpp:30:
+./src/interfaces/IWindowManager.h:42:31: error: ‘window’ has not been declared
+   42 |     virtual void clear_window(window wind, color clr) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:46:31: error: ‘window’ has not been declared
+   46 |     virtual void close_window(window wind) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:47:13: error: ‘window’ does not name a type
+   47 |     virtual window current_window() = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:58:36: error: ‘window’ has not been declared
+   58 |     virtual bool is_current_window(window wind) = 0;
+      |                                    ^~~~~~
+./src/interfaces/IWindowManager.h:61:33: error: ‘window’ has not been declared
+   61 |     virtual void move_window_to(window wind, int x, int y) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:62:13: error: ‘window’ does not name a type
+   62 |     virtual window open_window(string caption, int width, int height) = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:63:33: error: ‘window’ has not been declared
+   63 |     virtual void refresh_window(window wind) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:64:33: error: ‘window’ has not been declared
+   64 |     virtual void refresh_window(window wind, unsigned int target_fps) = 0;
+      |                                 ^~~~~~
+./src/interfaces/IWindowManager.h:66:32: error: ‘window’ has not been declared
+   66 |     virtual void resize_window(window wnd, int width, int height) = 0;
+      |                                ^~~~~~
+./src/interfaces/IWindowManager.h:68:37: error: ‘window’ has not been declared
+   68 |     virtual void set_current_window(window wind) = 0;
+      |                                     ^~~~~~
+./src/interfaces/IWindowManager.h:69:35: error: ‘window’ has not been declared
+   69 |     virtual string window_caption(window wind) = 0;
+      |                                   ^~~~~~
+./src/interfaces/IWindowManager.h:71:41: error: ‘window’ has not been declared
+   71 |     virtual bool window_close_requested(window wind) = 0;
+      |                                         ^~~~~~
+./src/interfaces/IWindowManager.h:73:36: error: ‘window’ has not been declared
+   73 |     virtual bool window_has_border(window wnd) = 0;
+      |                                    ^~~~~~
+./src/interfaces/IWindowManager.h:74:35: error: ‘window’ has not been declared
+   74 |     virtual bool window_has_focus(window wind) = 0;
+      |                                   ^~~~~~
+./src/interfaces/IWindowManager.h:76:31: error: ‘window’ has not been declared
+   76 |     virtual int window_height(window wind) = 0;
+      |                               ^~~~~~
+./src/interfaces/IWindowManager.h:78:39: error: ‘window’ has not been declared
+   78 |     virtual bool window_is_fullscreen(window wnd) = 0;
+      |                                       ^~~~~~
+./src/interfaces/IWindowManager.h:79:13: error: ‘window’ does not name a type
+   79 |     virtual window window_named(string caption) = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:81:38: error: ‘window’ has not been declared
+   81 |     virtual point_2d window_position(window wnd) = 0;
+      |                                      ^~~~~~
+./src/interfaces/IWindowManager.h:82:34: error: ‘window’ has not been declared
+   82 |     virtual void window_set_icon(window wind, bitmap bmp) = 0;
+      |                                  ^~~~~~
+./src/interfaces/IWindowManager.h:84:39: error: ‘window’ has not been declared
+   84 |     virtual void window_toggle_border(window wnd) = 0;
+      |                                       ^~~~~~
+./src/interfaces/IWindowManager.h:86:43: error: ‘window’ has not been declared
+   86 |     virtual void window_toggle_fullscreen(window wnd) = 0;
+      |                                           ^~~~~~
+./src/interfaces/IWindowManager.h:88:30: error: ‘window’ has not been declared
+   88 |     virtual int window_width(window wind) = 0;
+      |                              ^~~~~~
+./src/interfaces/IWindowManager.h:89:13: error: ‘window’ does not name a type
+   89 |     virtual window window_with_focus() = 0;
+      |             ^~~~~~
+./src/interfaces/IWindowManager.h:91:26: error: ‘window’ has not been declared
+   91 |     virtual int window_x(window wnd) = 0;
+      |                          ^~~~~~
+./src/interfaces/IWindowManager.h:93:26: error: ‘window’ has not been declared
+   93 |     virtual int window_y(window wnd) = 0;
+      |                          ^~~~~~
+In file included from src/include/SplashkitWindowManager.cpp:30:
+src/include/SplashkitWindowManager.h:39:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::clear_window(window, color)’ marked ‘override’, but does not override
+   39 |                 void clear_window(window wind, color clr) override;
+      |                      ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:43:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::close_window(window)’ marked ‘override’, but does not override
+   43 |                 void close_window(window wind) override;
+      |                      ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:44:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::current_window()’ marked ‘override’, but does not override
+   44 |                 window current_window() override;
+      |                        ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:55:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::is_current_window(window)’ marked ‘override’, but does not override
+   55 |                 bool is_current_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:58:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::move_window_to(window, int, int)’ marked ‘override’, but does not override
+   58 |                 void move_window_to(window wind, int x, int y) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:59:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::open_window(std::string, int, int)’ marked ‘override’, but does not override
+   59 |                 window open_window(string caption, int width, int height) override;
+      |                        ^~~~~~~~~~~
+src/include/SplashkitWindowManager.h:60:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::refresh_window(window)’ marked ‘override’, but does not override
+   60 |                 void refresh_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:61:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::refresh_window(window, unsigned int)’ marked ‘override’, but does not override
+   61 |                 void refresh_window(window wind, unsigned int target_fps) override;
+      |                      ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:63:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::resize_window(window, int, int)’ marked ‘override’, but does not override
+   63 |                 void resize_window(window wnd, int width, int height) override;
+      |                      ^~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:65:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::set_current_window(window)’ marked ‘override’, but does not override
+   65 |                 void set_current_window(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:66:24: error: ‘std::string SplashkitGameEngine::SplashkitWindowManager::window_caption(window)’ marked ‘override’, but does not override
+   66 |                 string window_caption(window wind) override;
+      |                        ^~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:68:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_close_requested(window)’ marked ‘override’, but does not override
+   68 |                 bool window_close_requested(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:70:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_has_border(window)’ marked ‘override’, but does not override
+   70 |                 bool window_has_border(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:71:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_has_focus(window)’ marked ‘override’, but does not override
+   71 |                 bool window_has_focus(window wind) override;
+      |                      ^~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:73:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_height(window)’ marked ‘override’, but does not override
+   73 |                 int window_height(window wind) override;
+      |                     ^~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:75:22: error: ‘bool SplashkitGameEngine::SplashkitWindowManager::window_is_fullscreen(window)’ marked ‘override’, but does not override
+   75 |                 bool window_is_fullscreen(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:76:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::window_named(std::string)’ marked ‘override’, but does not override
+   76 |                 window window_named(string caption) override;
+      |                        ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:78:26: error: ‘point_2d SplashkitGameEngine::SplashkitWindowManager::window_position(window)’ marked ‘override’, but does not override
+   78 |                 point_2d window_position(window wnd) override;
+      |                          ^~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:79:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_set_icon(window, bitmap)’ marked ‘override’, but does not override
+   79 |                 void window_set_icon(window wind, bitmap bmp) override;
+      |                      ^~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:81:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_toggle_border(window)’ marked ‘override’, but does not override
+   81 |                 void window_toggle_border(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:83:22: error: ‘void SplashkitGameEngine::SplashkitWindowManager::window_toggle_fullscreen(window)’ marked ‘override’, but does not override
+   83 |                 void window_toggle_fullscreen(window wnd) override;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:85:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_width(window)’ marked ‘override’, but does not override
+   85 |                 int window_width(window wind) override;
+      |                     ^~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:86:24: error: ‘_window_data* SplashkitGameEngine::SplashkitWindowManager::window_with_focus()’ marked ‘override’, but does not override
+   86 |                 window window_with_focus() override;
+      |                        ^~~~~~~~~~~~~~~~~
+src/include/SplashkitWindowManager.h:88:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_x(window)’ marked ‘override’, but does not override
+   88 |                 int window_x(window wnd) override;
+      |                     ^~~~~~~~
+src/include/SplashkitWindowManager.h:90:21: error: ‘int SplashkitGameEngine::SplashkitWindowManager::window_y(window)’ marked ‘override’, but does not override
+   90 |                 int window_y(window wnd) override;
+      |                     ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::camera_position()’:
+src/SplashkitCamera.cpp:7:26: error: ‘::camera_position’ has not been declared
+    7 |                 return ::camera_position();
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::camera_x()’:
+src/SplashkitCamera.cpp:12:26: error: ‘::camera_x’ has not been declared
+   12 |                 return ::camera_x();
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::camera_y()’:
+src/SplashkitCamera.cpp:17:26: error: ‘::camera_y’ has not been declared
+   17 |                 return ::camera_y();
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::center_camera_on(sprite, const vector_2d&)’:
+src/SplashkitCamera.cpp:22:19: error: ‘::center_camera_on’ has not been declared
+   22 |                 ::center_camera_on(s, offset);
+      |                   ^~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::center_camera_on(sprite, double, double)’:
+src/SplashkitCamera.cpp:27:19: error: ‘::center_camera_on’ has not been declared
+   27 |                 ::center_camera_on(s, offset_x, offset_y);
+      |                   ^~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_by(const vector_2d&)’:
+src/SplashkitCamera.cpp:32:19: error: ‘::move_camera_by’ has not been declared
+   32 |                 ::move_camera_by(offset);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_by(double, double)’:
+src/SplashkitCamera.cpp:37:19: error: ‘::move_camera_by’ has not been declared
+   37 |                 ::move_camera_by(dx, dy);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_to(const point_2d&)’:
+src/SplashkitCamera.cpp:42:19: error: ‘::move_camera_to’ has not been declared
+   42 |                 ::move_camera_to(pt);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::move_camera_to(double, double)’:
+src/SplashkitCamera.cpp:47:19: error: ‘::move_camera_to’ has not been declared
+   47 |                 ::move_camera_to(x, y);
+      |                   ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::point_in_window(window, const point_2d&)’:
+src/SplashkitCamera.cpp:52:26: error: ‘::point_in_window’ has not been declared
+   52 |                 return ::point_in_window(wind, pt);
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::point_on_screen(const point_2d&)’:
+src/SplashkitCamera.cpp:57:26: error: ‘::point_on_screen’ has not been declared
+   57 |                 return ::point_on_screen(pt);
+      |                          ^~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::rect_in_window(window, const rectangle&)’:
+src/SplashkitCamera.cpp:62:26: error: ‘::rect_in_window’ has not been declared
+   62 |                 return ::rect_in_window(wind, rect);
+      |                          ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual bool SplashkitGameEngine::SplashkitCamera::rect_on_screen(const rectangle&)’:
+src/SplashkitCamera.cpp:67:26: error: ‘::rect_on_screen’ has not been declared
+   67 |                 return ::rect_on_screen(rect);
+      |                          ^~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::screen_center()’:
+src/SplashkitCamera.cpp:72:26: error: ‘::screen_center’ has not been declared
+   72 |                 return ::screen_center();
+      |                          ^~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::screen_rectangle()’:
+src/SplashkitCamera.cpp:77:26: error: ‘::screen_rectangle’ has not been declared; did you mean ‘sprite_screen_rectangle’?
+   77 |                 return ::screen_rectangle();
+      |                          ^~~~~~~~~~~~~~~~
+      |                          sprite_screen_rectangle
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_position(point_2d)’:
+src/SplashkitCamera.cpp:82:19: error: ‘::set_camera_position’ has not been declared
+   82 |                 ::set_camera_position(pos);
+      |                   ^~~~~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_x(double)’:
+src/SplashkitCamera.cpp:87:19: error: ‘::set_camera_x’ has not been declared
+   87 |                 ::set_camera_x(x);
+      |                   ^~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitCamera::set_camera_y(double)’:
+src/SplashkitCamera.cpp:92:19: error: ‘::set_camera_y’ has not been declared
+   92 |                 ::set_camera_y(y);
+      |                   ^~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::to_screen(const point_2d&)’:
+src/SplashkitCamera.cpp:97:26: error: ‘::to_screen’ has not been declared
+   97 |                 return ::to_screen(pt);
+      |                          ^~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::to_screen(const rectangle&)’:
+src/SplashkitCamera.cpp:102:26: error: ‘::to_screen’ has not been declared
+  102 |                 return ::to_screen(rect);
+      |                          ^~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_screen_x(double)’:
+src/SplashkitCamera.cpp:107:26: error: ‘::to_screen_x’ has not been declared
+  107 |                 return ::to_screen_x(world_x);
+      |                          ^~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_screen_y(double)’:
+src/SplashkitCamera.cpp:112:26: error: ‘::to_screen_y’ has not been declared
+  112 |                 return ::to_screen_y(world_y);
+      |                          ^~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual point_2d SplashkitGameEngine::SplashkitCamera::to_world(const point_2d&)’:
+src/SplashkitCamera.cpp:117:26: error: ‘::to_world’ has not been declared
+  117 |                 return ::to_world(pt);
+      |                          ^~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_world_x(double)’:
+src/SplashkitCamera.cpp:122:26: error: ‘::to_world_x’ has not been declared
+  122 |                 return ::to_world_x(screen_x);
+      |                          ^~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual double SplashkitGameEngine::SplashkitCamera::to_world_y(double)’:
+src/SplashkitCamera.cpp:127:26: error: ‘::to_world_y’ has not been declared
+  127 |                 return ::to_world_y(screen_y);
+      |                          ^~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual vector_2d SplashkitGameEngine::SplashkitCamera::vector_world_to_screen()’:
+src/SplashkitCamera.cpp:132:26: error: ‘::vector_world_to_screen’ has not been declared
+  132 |                 return ::vector_world_to_screen();
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+src/SplashkitCamera.cpp: In member function ‘virtual rectangle SplashkitGameEngine::SplashkitCamera::window_area(window)’:
+src/SplashkitCamera.cpp:137:26: error: ‘::window_area’ has not been declared; did you mean ‘window_named’?
+  137 |                 return ::window_area(wind);
+      |                          ^~~~~~~~~~~
+      |                          window_named
+src/Game.cpp:7:10: fatal error: SplashkitWindowManager.h: No such file or directory
+    7 | #include "SplashkitWindowManager.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from src/SplashkitCamera.cpp:1:
+src/SplashkitCamera.h:3:10: fatal error: ICamera.h: No such file or directory
+    3 | #include "ICamera.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+src/Game.cpp:7:10: fatal error: SplashkitWindowManager.h: No such file or directory
+    7 | #include "SplashkitWindowManager.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/Game.cpp:7:10: fatal error: SplashkitWindowManager.h: No such file or directory
+    7 | #include "SplashkitWindowManager.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+🎉  g++ command run successfully 🎉
+🎉  g++ command run successfully 🎉
+src/include/SplashkitLogging.cpp: In member function ‘virtual void SplashkitGameEngine::SplashkitLogging::init_custom_logger(std::string, bool, log_mode)’:
+src/include/SplashkitLogging.cpp:46:48: error: ‘override_prev_log’ was not declared in this scope
+   46 |                 ::init_custom_logger(app_name, override_prev_log, mode);
+      |                                                ^~~~~~~~~~~~~~~~~
+🎉  g++ command run successfully 🎉
