@@ -1,10 +1,12 @@
 #pragma once
 #include <stack>
 
-namespace SplashkitGameEngine {
+namespace SplashkitGameEngine
+{
     class IGameState;
 
-    class IGameStateManager {
+    class IGameStateManager
+    {
     public:
         // Constructor
         IGameStateManager() = default;
@@ -16,7 +18,7 @@ namespace SplashkitGameEngine {
         virtual void ChangeState() = 0;
 
         // Get a pointer to the current game state (implementation in derived classes)
-        virtual IGameState* GetCurrentState() = 0;
+        virtual IGameState *GetCurrentState() = 0;
 
         // Pop the current game state from the stack (implementation in derived classes)
         virtual void PopState() = 0;
@@ -31,4 +33,3 @@ namespace SplashkitGameEngine {
         virtual void Update() = 0;
     };
 }
-

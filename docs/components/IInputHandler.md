@@ -2,18 +2,20 @@
 
 ## Description
 
-The `IInputHandler` interface serves as an entry point to the input system within the game engine. It provides methods and properties for handling user input, allowing developers to create customized input systems tailored to the game's requirements.
+The `IInputHandler` interface serves as an entry point to the input system within the game engine.
+It provides methods and properties for handling user input, allowing developers to create customized
+input systems tailored to the game's requirements.
 
 ## Static Properties
 
-| **Name**                 | **Description**                                                                                                          |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| anyKey                   | Indicates if any key or mouse button is currently held down. (Read Only)                                                 |
-| anyKeyDown               | Returns `true` on the first frame when any key or mouse button is pressed. (Read Only)                                   |
-| inputString              | Returns the keyboard input entered in the current frame. (Read Only)                                                     |
-| mousePosition            | The current mouse position in pixel coordinates. (Read Only)                                                             |
-| mousePresent             | Indicates whether a mouse device is detected.                                                                            |
-| mouseScrollDelta         | The current mouse scroll delta. (Read Only)                                                                              |
+| **Name**         | **Description**                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------- |
+| anyKey           | Indicates if any key or mouse button is currently held down. (Read Only)               |
+| anyKeyDown       | Returns `true` on the first frame when any key or mouse button is pressed. (Read Only) |
+| inputString      | Returns the keyboard input entered in the current frame. (Read Only)                   |
+| mousePosition    | The current mouse position in pixel coordinates. (Read Only)                           |
+| mousePresent     | Indicates whether a mouse device is detected.                                          |
+| mouseScrollDelta | The current mouse scroll delta. (Read Only)                                            |
 
 ## Static Methods
 
@@ -35,11 +37,16 @@ The `IInputHandler` interface serves as an entry point to the input system withi
 
 ## Remarks
 
-The `IInputHandler` interface facilitates interaction with user input within the game engine. Developers can implement custom input systems that accommodate various control schemes, such as keyboard, mouse, gamepad, and touch screen.
+The `IInputHandler` interface facilitates interaction with user input within the game engine.
+Developers can implement custom input systems that accommodate various control schemes, such as
+keyboard, mouse, gamepad, and touch screen.
 
-This interface provides access to input-related properties and methods, allowing for responsive and adaptable user interactions. By adhering to SOLID design principles, developers can create modular input systems that integrate seamlessly into the game's architecture.
+This interface provides access to input-related properties and methods, allowing for responsive and
+adaptable user interactions. By adhering to SOLID design principles, developers can create modular
+input systems that integrate seamlessly into the game's architecture.
 
-**Note:** Input flags are not reset until the `Update` loop. All input calls should be made within the `Update` loop to ensure consistent behavior.
+**Note:** Input flags are not reset until the `Update` loop. All input calls should be made within
+the `Update` loop to ensure consistent behavior.
 
 ## Example
 
@@ -90,4 +97,5 @@ int main() {
 }
 ```
 
-The documentation above provides a comprehensive overview of the `IInputHandler` interface, enabling developers to create versatile input systems for user interaction within the game engine.
+The documentation above provides a comprehensive overview of the `IInputHandler` interface, enabling
+developers to create versatile input systems for user interaction within the game engine.

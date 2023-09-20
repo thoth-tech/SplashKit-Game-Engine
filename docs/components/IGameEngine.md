@@ -2,7 +2,11 @@
 
 ## Description
 
-The `IGameEngine` interface serves as the core foundation for the game engine's functionality. It encapsulates the essential components required for running a game, including rendering, state management, input handling, and logging. This interface defines a consistent structure for game engine implementations, enabling developers to create diverse and customizable game engines while adhering to SOLID design principles.
+The `IGameEngine` interface serves as the core foundation for the game engine's functionality. It
+encapsulates the essential components required for running a game, including rendering, state
+management, input handling, and logging. This interface defines a consistent structure for game
+engine implementations, enabling developers to create diverse and customizable game engines while
+adhering to SOLID design principles.
 
 ## Properties
 
@@ -23,17 +27,21 @@ The `IGameEngine` interface serves as the core foundation for the game engine's 
 
 ## Events (if any)
 
-| **Name**               | **Description**                                                                               |
-|------------------------|-----------------------------------------------------------------------------------------------|
-| GameStarted            | Event triggered when the game engine has started running.                                     |
-| GamePaused             | Event triggered when the game engine is paused.                                               |
-| GameStateChanged       | Event triggered when the game state has changed.                                              |
+| **Name**         | **Description**                                           |
+| ---------------- | --------------------------------------------------------- |
+| GameStarted      | Event triggered when the game engine has started running. |
+| GamePaused       | Event triggered when the game engine is paused.           |
+| GameStateChanged | Event triggered when the game state has changed.          |
 
 ## Remarks
 
-The `IGameEngine` interface defines a standardized structure for implementing game engines. It encapsulates the core systems required for a functional game, offering a foundation that facilitates the integration of diverse components. By adhering to this interface, developers can ensure modularity and extensibility while building game engines tailored to specific requirements.
+The `IGameEngine` interface defines a standardized structure for implementing game engines. It
+encapsulates the core systems required for a functional game, offering a foundation that facilitates
+the integration of diverse components. By adhering to this interface, developers can ensure
+modularity and extensibility while building game engines tailored to specific requirements.
 
-**Note:** The implementation of specific methods and properties is left to concrete classes that implement the `IGameEngine` interface.
+**Note:** The implementation of specific methods and properties is left to concrete classes that
+implement the `IGameEngine` interface.
 
 ## Example
 
@@ -80,4 +88,6 @@ int main() {
 }
 ```
 
-The above documentation outlines the `IGameEngine` interface, which forms the basis for building robust and customizable game engines. Developers can implement this interface to create game engines with various features and functionalities while maintaining a consistent structure.
+The above documentation outlines the `IGameEngine` interface, which forms the basis for building
+robust and customizable game engines. Developers can implement this interface to create game engines
+with various features and functionalities while maintaining a consistent structure.

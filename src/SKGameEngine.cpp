@@ -1,114 +1,134 @@
 #include "SKGameEngine.h"
 
-namespace SplashkitGameEngine {
+namespace SplashkitGameEngine
+{
 
     SKGameEngine::SKGameEngine() : running(false) {}
 
     SKGameEngine::~SKGameEngine()
     {
-        if (running) {
+        if (running)
+        {
             Stop();
         }
     }
 
-    bool SKGameEngine::Initialize() {
+    bool SKGameEngine::Initialize()
+    {
         // Implementation of initialization
         // ...
         Log("Initializing game engine.", "Log");
         return true; // Return true if initialization was successful
     }
 
-    void SKGameEngine::SetGameStateManager(std::unique_ptr<IGameStateManager> manager) {
+    void SKGameEngine::SetGameStateManager(std::unique_ptr<IGameStateManager> manager)
+    {
         this->gameStateManager = std::move(manager);
         Log("Set Game State Manager", "Debug");
     }
 
-    IGameStateManager* SKGameEngine::GetGameStateManager() const {
+    IGameStateManager *SKGameEngine::GetGameStateManager() const
+    {
         return gameStateManager.get();
     }
 
-    void SKGameEngine::SetLogger(std::unique_ptr<ILogger> logger) {
+    void SKGameEngine::SetLogger(std::unique_ptr<ILogger> logger)
+    {
         this->logger = std::move(logger);
         Log("Set Logger", "Debug");
     }
 
-    ILogger* SKGameEngine::GetLogger() const {
+    ILogger *SKGameEngine::GetLogger() const
+    {
         return logger.get();
     }
 
-    void SKGameEngine::SetRenderer(std::unique_ptr<IRenderer> renderer) {
+    void SKGameEngine::SetRenderer(std::unique_ptr<IRenderer> renderer)
+    {
         this->renderer = std::move(renderer);
         Log("Set Renderer", "Debug");
     }
 
-    IRenderer* SKGameEngine::GetRenderer() const {
+    IRenderer *SKGameEngine::GetRenderer() const
+    {
         return renderer.get();
     }
 
-    void SKGameEngine::Start() {
+    void SKGameEngine::Start()
+    {
         // Implementation of starting the game
         Log("Starting game.", "Log");
         running = true;
         int count = 0;
-        while (IsRunning()) {
+        while (IsRunning())
+        {
             HandleEvents();
             Update();
             Draw();
             count++;
-            if (count >= 15) {
+            if (count >= 15)
+            {
                 Stop();
             }
         }
     }
 
-    void SKGameEngine::Stop() {
+    void SKGameEngine::Stop()
+    {
         // Implementation of stopping the game
         running = false;
         Log("Executing game shutdown procedures.", "Log");
         // Explicitly reset the unique_ptr
         gameStateManager.reset();
-        if (renderer) {
+        if (renderer)
+        {
             Log("Shutting down renderer.", "Debug");
             renderer->Shutdown();
         }
         logger.reset();
     }
 
-    bool SKGameEngine::IsRunning() const {
+    bool SKGameEngine::IsRunning() const
+    {
         return running;
     }
 
-    void SKGameEngine::Update() {
+    void SKGameEngine::Update()
+    {
         // Implementation of game update
         // ...
         Log("Updating game.", "Debug");
     }
 
-    void SKGameEngine::HandleEvents() {
+    void SKGameEngine::HandleEvents()
+    {
         // Implementation of event handling
         // ...
         Log("Handling game events.", "Debug");
-        if (gameStateManager) {
+        if (gameStateManager)
+        {
             gameStateManager->Update();
         }
-        else {
+        else
+        {
             Log("No game state manager", "Error");
         }
     }
 
-    void SKGameEngine::Draw() {
+    void SKGameEngine::Draw()
+    {
         // Implementation of game rendering
         // ...
         Log("Calling draw game state.", "Debug");
     }
 
-    void SKGameEngine::Log(const std::string& message, const std::string& logLevel)
+    void SKGameEngine::Log(const std::string &message, const std::string &logLevel)
     {
-        if (this->logger != nullptr) {
+        if (this->logger != nullptr)
+        {
             std::string logMessage = "[" + logLevel + "] " + message;
             logger->Log(logMessage);
         }
     }
 
 } // namespace SplashkitGameEngine
-
